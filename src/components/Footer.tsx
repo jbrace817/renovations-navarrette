@@ -63,7 +63,7 @@ const Footer = ({ className }: FooterProps) => {
   return (
     <footer
       className={cn(
-        "bg-foreground mx-auto max-w-[1920px] pt-16 pb-8 md:pt-20",
+        "mx-auto max-w-[1920px] bg-slate-900 pt-16 pb-8 md:pt-20",
         className,
       )}
     >
