@@ -231,10 +231,10 @@ const Navbar21 = ({ className }: Navbar21Props) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 overflow-hidden bg-neutral-950"
+            className="fixed inset-0 z-40 overflow-hidden bg-slate-900"
           >
             {/* Subtle gradient accent */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-transparent" />
+            {/* <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-transparent" /> */}
 
             <Container className="relative flex h-full flex-col justify-between py-24 md:py-32">
               {/* Main Navigation */}
