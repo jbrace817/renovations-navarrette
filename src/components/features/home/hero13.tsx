@@ -52,18 +52,18 @@ const Hero13 = ({ className }: Hero13Props) => {
         </FadeIn>
         <FadeIn delay={0.2}>
           <h1 className="font-heading mb-4 text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:mb-6 md:text-5xl md:text-[7vw] lg:text-7xl">
-            Custom Home
+            Southampton&apos;s Trusted
             <br />
-            Remodeling Crafted
+            Home Remodeling
             <br />
-            For Style & Comfort
+            Contractors
           </h1>
         </FadeIn>
         <FadeIn delay={0.4} inViewPort>
           <p className="max-w-2xl text-sm text-white/90 sm:text-base md:text-[2vw] lg:text-xl">
-            Modern, functional, and beautifully designed home remodeling
-            tailored to your lifestyle and budget with a commitment to your
-            satisfaction.
+            Kitchens, bathrooms, basements, and full home renovations in
+            Southampton, PA. Quality craftsmanship from a local team that
+            treats every project like their own.
           </p>
         </FadeIn>
         <FadeInStagger className="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-4 md:mt-6 lg:mt-10">
