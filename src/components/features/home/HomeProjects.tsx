@@ -11,15 +11,13 @@ import PhotoAttribution from "@/components/PhotoAttribution";
 
 const projects = [
   {
-    title: "Southampton Kitchen Rebuild",
+    title: "Warrington Kitchen Rebuild",
     descriptionParts: [
       "A full kitchen transformation focused on flow and function.",
       "We reworked the layout for better movement, installed custom cabinetry with smart storage, upgraded lighting for a cleaner look, and finished it with durable surfaces and modern hardware that still feels warm and inviting.",
     ],
-    imageBefore:
-      "https://images.pexels.com/photos/20773076/pexels-photo-20773076.jpeg",
-    imageAfter:
-      "https://images.pexels.com/photos/4642438/pexels-photo-4642438.jpeg",
+    imageBefore: "/images/projects/kitchen-before.jpg",
+    imageAfter: "/images/projects/kitchen-after.jpg",
     badge: "Kitchen Remodel",
     serviceHref: "/services#kitchen-remodeling",
     highlights: ["Custom cabinetry", "Layout rework", "Lighting + finishes"],
@@ -31,15 +29,13 @@ const projects = [
       "https://www.pexels.com/photo/interior-of-house-during-construction-4642438/",
   },
   {
-    title: "Newtown Primary Bath Upgrade",
+    title: "Jamison Primary Bath Upgrade",
     descriptionParts: [
       "A spa-style primary bath renovation designed for comfort and daily convenience.",
       "We built a walk-in shower, delivered premium tilework with clean lines, improved lighting and ventilation, and added smarter storage so the room looks elevated while staying easy to maintain.",
     ],
-    imageBefore:
-      "https://images.pexels.com/photos/15062118/pexels-photo-15062118.jpeg",
-    imageAfter:
-      "https://images.pexels.com/photos/4642438/pexels-photo-4642438.jpeg",
+    imageBefore: "/images/projects/bathroom-before.jpg",
+    imageAfter: "/images/projects/bathroom-after.jpg",
     badge: "Bathroom Remodel",
     serviceHref: "/services#bathroom-remodeling",
     highlights: ["Walk-in shower", "Custom tile", "Built-in storage"],
@@ -51,27 +47,24 @@ const projects = [
       "https://www.pexels.com/photo/interior-of-house-during-construction-4642438/",
   },
   {
-    title: "Warrington Home Addition Expansion",
+    title: "Ambler Living Room Renovation",
     descriptionParts: [
-      "A seamless home addition that adds square footage without looking 'tacked on.'",
-      "We matched exterior details and rooflines, planned the new layout around how the family uses the space, and finished the interior so transitions feel natural—like the addition was always part of the original home.",
+      "A complete living area transformation that brought warmth and character back to a tired space.",
+      "We replaced worn carpet with hardwood flooring, repainted with modern neutral tones, updated the ceiling fan and lighting, and refreshed the brick fireplace surround—creating an open, inviting room the whole family enjoys.",
     ],
-    imageBefore:
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ali-moradi-qNic6LXHw-w-unsplash.jpg",
-    imageAfter:
-      "https://images.pexels.com/photos/4642438/pexels-photo-4642438.jpeg",
-    badge: "Home Addition",
+    imageBefore: "/images/projects/living-before.jpg",
+    imageAfter: "/images/projects/living-after.jpg",
+    badge: "Living Room Remodel",
     serviceHref: "/services#home-additions",
     highlights: [
-      "New living space",
-      "Matched finishes",
-      "Permit-ready planning",
+      "Hardwood flooring",
+      "Fresh paint + trim",
+      "Fireplace refresh",
     ],
-    photoBeforeAuthor: "Ali Moradi",
-    photoBeforeUrl: "https://unsplash.com/@alimoradi",
-    photoAfterAuthor: "Brett Rogers",
-    photoAfterUrl:
-      "https://www.pexels.com/photo/interior-of-house-during-construction-4642438/",
+    photoBeforeAuthor: "",
+    photoBeforeUrl: "",
+    photoAfterAuthor: "",
+    photoAfterUrl: "",
   },
 ];
 
@@ -168,10 +161,10 @@ const HomeProjects = ({ className }: HomeProjectsProps) => {
                   className="relative aspect-4/3 w-full overflow-hidden rounded-2xl md:aspect-square lg:aspect-4/3 lg:py-10"
                 >
                   <ImageComparisonCustomSlider
-                    imageBefore={project.imageBefore}
-                    imageAfter={project.imageAfter}
+                    imageBefore={project.imageAfter}
+                    imageAfter={project.imageBefore}
                   />
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-between p-4">
+                  {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-between p-4">
                     {project.photoBeforeAuthor && (
                       <div className="pointer-events-auto">
                         <PhotoAttribution
@@ -188,7 +181,7 @@ const HomeProjects = ({ className }: HomeProjectsProps) => {
                         />
                       </div>
                     )}
-                  </div>
+                  </div> */}
                 </FadeIn>
               </div>
 
