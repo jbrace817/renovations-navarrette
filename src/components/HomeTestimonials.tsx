@@ -138,18 +138,18 @@ const HomeTestimonials = ({ className }: HomeTestimonialsProps) => {
                 className="relative h-72 w-full overflow-hidden rounded-2xl lg:h-auto"
               >
                 <Image
-                  src="https://images.pexels.com/photos/32473245/pexels-photo-32473245.png"
+                  src="/images/testimonial/staircase.jpg"
                   alt="Modern interior design"
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   fill
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-4">
+                {/* <div className="absolute bottom-0 left-0 p-4">
                   <PhotoAttribution
                     author="The Ghazi"
                     url="https://www.pexels.com/photo/elegant-modern-interior-with-minimalist-design-32473245/"
                   />
-                </div>
+                </div> */}
               </FadeIn>
 
               {/* Featured Testimonial Card */}
