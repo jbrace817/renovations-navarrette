@@ -62,8 +62,8 @@ const Hero13 = ({ className }: Hero13Props) => {
         <FadeIn delay={0.4} inViewPort>
           <p className="max-w-2xl text-sm text-white/90 sm:text-base md:text-[2vw] lg:text-xl">
             Kitchens, bathrooms, basements, and full home renovations in
-            Southampton, PA. Quality craftsmanship from a local team that
-            treats every project like their own.
+            Southampton, PA. Quality craftsmanship from a local team that treats
+            every project like their own.
           </p>
         </FadeIn>
         <FadeInStagger className="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-4 md:mt-6 lg:mt-10">
@@ -91,12 +91,12 @@ const Hero13 = ({ className }: Hero13Props) => {
           </FadeIn>
         </FadeInStagger>
 
-        <FadeIn delay={1} className="ml-2">
+        {/* <FadeIn delay={1} className="ml-2">
           <PhotoAttribution
             author="Curtis Adams"
             url="https://images.pexels.com/photos/11593502/pexels-photo-11593502.jpeg"
           />
-        </FadeIn>
+        </FadeIn> */}
       </Container>
     </section>
   );

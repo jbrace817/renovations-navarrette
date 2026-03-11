@@ -97,14 +97,14 @@ const HomeFinalCTA = ({ className }: HomeFinalCTAProps) => {
                 </div>
 
                 {/* Photo Attribution */}
-                <FadeIn delay={0.5}>
+                {/* <FadeIn delay={0.5}>
                   <div className="mt-8 hidden md:block">
                     <PhotoAttribution
                       author="Max Vakhtbovych"
                       url="https://www.pexels.com/photo/exterior-of-modern-residential-house-in-summer-7031606/"
                     />
                   </div>
-                </FadeIn>
+                </FadeIn> */}
               </div>
             </div>
           </Container>

@@ -83,10 +83,10 @@ export function HomeMidCTA({
                   <p className="mt-3 max-w-md text-sm leading-relaxed text-pretty text-white/80 sm:text-base">
                     {leftSubtitle}
                   </p>
-                  <PhotoAttribution
+                  {/* <PhotoAttribution
                     author="Curtis Adams"
                     url="https://images.pexels.com/photos/12700444/pexels-photo-12700444.jpeg"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
