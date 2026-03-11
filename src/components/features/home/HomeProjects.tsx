@@ -11,7 +11,7 @@ import PhotoAttribution from "@/components/PhotoAttribution";
 
 const projects = [
   {
-    title: "Doylestown Kitchen Rebuild",
+    title: "Southampton Kitchen Rebuild",
     descriptionParts: [
       "A full kitchen transformation focused on flow and function.",
       "We reworked the layout for better movement, installed custom cabinetry with smart storage, upgraded lighting for a cleaner look, and finished it with durable surfaces and modern hardware that still feels warm and inviting.",

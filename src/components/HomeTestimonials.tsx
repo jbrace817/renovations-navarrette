@@ -14,7 +14,7 @@ const testimonials = [
     name: "Megan Alvarez",
     city: "Perkasie",
     quote:
-      "Artisan Builders treated our home like it was their own. The crew showed up on time, kept everything clean, and the final result looks like it belongs in a magazine.",
+      "Renovations By Navarrette treated our home like it was their own. The crew showed up on time, kept everything clean, and the final result looks like it belongs in a magazine.",
     image:
       "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
     initials: "MA",
@@ -35,7 +35,7 @@ const testimonials = [
     name: "Lindsay Price",
     city: "Landsdale",
     quote:
-      "We got three quotes and Artisan Builders was the only team that asked the right questions. They solved problems before they became problems and delivered exactly what they promised.",
+      "We got three quotes and Renovations By Navarrette was the only team that asked the right questions. They solved problems before they became problems and delivered exactly what they promised.",
     image:
       "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
     rating: 5,

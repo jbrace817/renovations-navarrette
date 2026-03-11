@@ -90,7 +90,7 @@ const HomeAbout = ({ className }: HomeAboutProps) => {
               <div className="mb-6 flex items-center gap-3 md:mb-8">
                 <span className="bg-primary h-px w-8 md:w-12" />
                 <p className="text-primary text-sm font-semibold tracking-wider uppercase md:text-base">
-                  About Artisan Builders
+                  About Us
                 </p>
               </div>
             </FadeIn>
@@ -124,7 +124,7 @@ const HomeAbout = ({ className }: HomeAboutProps) => {
                       Located in
                     </span>
                     <span className="text-foreground text-base font-semibold">
-                      Doylestown, PA
+                      Southampton, PA
                     </span>
                   </div>
                 </div>

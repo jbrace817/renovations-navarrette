@@ -45,7 +45,7 @@ const socialLinks = [
 ];
 
 const contactInfo = {
-  email: "info@artisanbuilders.com",
+  email: "info@renovationsbynavarrette.com",
   phone: "(123) 456-7890",
 };
 

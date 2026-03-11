@@ -9,18 +9,18 @@ import Instagram from "@/assets/icons/Instagram";
 import { cn } from "@/lib/utils";
 
 const footerData = {
-  heading: "Artisan Builders",
+  heading: "Renovations By Navarrette",
   description:
-    "Quality craftsmanship and attention to detail in every project. Transforming homes throughout Pennsylvania.",
+    "Quality craftsmanship and attention to detail in every project. Transforming homes throughout the Southampton, PA area.",
   email: {
-    label: "info@artisanbuilders.com",
-    href: "mailto:info@artisanbuilders.com",
+    label: "info@renovationsbynavarrette.com",
+    href: "mailto:info@renovationsbynavarrette.com",
   },
   phone: {
     label: "(123) 456-7890",
     href: "tel:+11234567890",
   },
-  location: "Doylestown, PA",
+  location: "Southampton, PA",
   socialLinks: [
     {
       label: "Twitter",
@@ -173,7 +173,7 @@ const Footer = ({ className }: FooterProps) => {
         {/* Bottom Section */}
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p className="text-xs text-white/50">
-            © {currentYear} Artisan Builders. All rights reserved.
+            © {currentYear} Renovations By Navarrette. All rights reserved.
           </p>
 
           <div className="flex items-center gap-1 text-xs text-white/50">

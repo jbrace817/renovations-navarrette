@@ -96,7 +96,7 @@ export function HomeServicesCards() {
 
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground max-w-2xl text-center text-base leading-relaxed text-pretty md:text-lg">
-              Explore the core services we&pos;re known for. From interior
+              Explore the core services we&apos;re known for. From interior
               remodels to outdoor builds and custom woodwork, everything is
               planned and built with care.
             </p>

@@ -43,7 +43,7 @@ const Hero13 = ({ className }: Hero13Props) => {
             className="max-w-full bg-transparent py-1.5 pr-2.5 text-xs font-normal sm:text-sm lg:py-1.5 lg:pr-5 lg:pl-2"
           >
             <span className="bg-primary text-primary-foreground mr-1 flex size-6 w-fit shrink-0 items-center justify-center rounded-full px-2 py-3.5 text-xs font-semibold">
-              Doylestown, PA
+              Southampton, PA
             </span>
             <p className="truncate font-semibold whitespace-nowrap text-white">
               Licensed • Insured{" "}
