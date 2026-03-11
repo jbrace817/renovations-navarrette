@@ -73,7 +73,7 @@ const Footer = ({ className }: FooterProps) => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Logo
-              className="text-background mb-4 text-5xl md:text-6xl"
+              className="text-background mb-4 text-5xl md:text-5xl lg:text-4xl xl:text-5xl"
               invert
             />
             <p className="mb-6 max-w-xs text-sm leading-relaxed text-white/60">
@@ -180,7 +180,7 @@ const Footer = ({ className }: FooterProps) => {
             <span>Designed by</span>
             <Link
               href="https://www.oneupdigitalstudio.com"
-              className="text-primary group inline-flex items-center gap-1 font-semibold transition-colors hover:text-amber-400"
+              className="text-primary group hover:text-primary inline-flex items-center gap-1 font-semibold transition-colors"
             >
               OneUp Digital
               <ArrowUpRight className="size-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
