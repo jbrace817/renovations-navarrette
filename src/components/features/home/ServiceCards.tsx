@@ -20,8 +20,7 @@ const services: ServiceCard[] = [
     description:
       "Better layout, upgraded finishes, and smart storage—built for how you live.",
     href: "/services/kitchen-remodeling",
-    image:
-      "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+    image: "/images/services/kitchen.webp",
     highlights: ["Layout upgrades", "Tile + flooring", "Custom storage"],
   },
   {
@@ -29,8 +28,7 @@ const services: ServiceCard[] = [
     description:
       "Clean, comfortable bathrooms with quality tile work and durable finishes.",
     href: "/services/bathroom-remodeling",
-    image:
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3",
+    image: "/images/services/bathroom2.jpg",
     highlights: ["Tile work", "Fixtures + lighting", "Custom details"],
   },
   {
@@ -38,8 +36,7 @@ const services: ServiceCard[] = [
     description:
       "Turn unused space into a family room, office, gym, or guest-ready area.",
     href: "/services/basement-finishing",
-    image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3",
+    image: "/images/services/basement1.jpg",
     highlights: ["Framing + finishes", "Comfort upgrades", "Multi-use spaces"],
   },
   {
@@ -47,8 +44,7 @@ const services: ServiceCard[] = [
     description:
       "Expand your home with additions that blend seamlessly with the existing structure.",
     href: "/services/home-additions",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+    image: "/images/services/additions.jpg",
     highlights: ["New rooms", "Structural work", "Permits + planning"],
   },
   {
@@ -56,8 +52,7 @@ const services: ServiceCard[] = [
     description:
       "Decks, patios, and hardscapes designed for relaxing, hosting, and durability.",
     href: "/services/outdoor-living",
-    image:
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3",
+    image: "/images/services/outdoor2.jpg",
     highlights: ["Decks", "Hardscapes", "Outdoor spaces"],
   },
   {
@@ -65,8 +60,7 @@ const services: ServiceCard[] = [
     description:
       "Built-to-fit cabinetry, built-ins, and storage solutions made for your space.",
     href: "/services/custom-cabinetry",
-    image:
-      "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+    image: "/images/services/custom-cabinets.jpg",
     highlights: ["Custom cabinets", "Built-ins", "Storage options"],
   },
 ];
