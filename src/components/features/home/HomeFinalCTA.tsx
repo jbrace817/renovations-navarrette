@@ -35,7 +35,7 @@ const HomeFinalCTA = ({ className }: HomeFinalCTAProps) => {
           />
 
           {/* Gradient Overlays */}
-          <div className="absolute inset-0 bg-black/60 md:bg-transparent md:bg-linear-to-r md:from-black/70 md:via-black/32 md:to-transparent" />
+          <div className="absolute inset-0 bg-black/60 md:bg-transparent md:bg-linear-to-r md:from-black/76 md:via-black/44 md:to-transparent" />
 
           {/* Content */}
           <Container className="absolute inset-0 z-10 flex items-center">
@@ -55,9 +55,10 @@ const HomeFinalCTA = ({ className }: HomeFinalCTAProps) => {
                 {/* Heading */}
                 <FadeIn delay={0.2}>
                   <h2 className="mb-6 text-center text-3xl leading-[1.1] font-semibold tracking-tight text-white sm:text-4xl md:text-left lg:text-5xl">
-                    Ready to Transform Your
+                    Ready to Transform
                     <br />
-                    <span className="text-primary">Home</span>?
+                    Your{" "}
+                    <span className="text-[oklch(0.58_0.10_250)]">Home</span>?
                   </h2>
                 </FadeIn>
 
