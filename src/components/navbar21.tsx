@@ -10,6 +10,8 @@ import Container from "./Container";
 import Twitter from "@/assets/icons/Twitter";
 import Facebook from "@/assets/icons/Facebook";
 import Instagram from "@/assets/icons/Instagram";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 interface MenuItem {
   label: string;
@@ -58,7 +60,7 @@ const HamburgerIcon = ({ isOpen }: { isOpen: boolean }) => {
       {/* Top line */}
       <motion.span
         className={cn(
-          "bg-foreground absolute left-0 h-[2px] w-full",
+          "absolute left-0 h-[2px] w-full bg-slate-900",
           isOpen && "bg-background",
         )}
         initial={false}
@@ -71,7 +73,7 @@ const HamburgerIcon = ({ isOpen }: { isOpen: boolean }) => {
       />
       {/* Middle line */}
       <motion.span
-        className="bg-foreground absolute top-1/2 left-0 h-[2px] w-full -translate-y-1/2"
+        className="absolute top-1/2 left-0 h-[2px] w-full -translate-y-1/2 bg-slate-900"
         initial={false}
         animate={{
           opacity: isOpen ? 0 : 1,
@@ -82,7 +84,7 @@ const HamburgerIcon = ({ isOpen }: { isOpen: boolean }) => {
       {/* Bottom line */}
       <motion.span
         className={cn(
-          "bg-foreground absolute left-0 h-[2px] w-full",
+          "absolute left-0 h-[2px] w-full bg-slate-900",
           isOpen && "bg-background",
         )}
         initial={false}
@@ -187,19 +189,31 @@ const Navbar21 = ({ className }: Navbar21Props) => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex lg:items-center lg:gap-8 xl:gap-12 2xl:gap-16">
-            {menuItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-foreground hover:text-primary group relative flex items-center gap-1 text-base font-semibold tracking-wide transition-colors duration-300"
-              >
-                <span className="relative">
+            {menuItems.map((item) =>
+              item.label === "Contact" ? (
+                <Button
+                  key={item.label}
+                  variant="secondary"
+                  size="lg"
+                  className="group bg-primary text-primary-foreground hover:bg-primary/90 flex cursor-pointer items-center gap-4 rounded-full"
+                  onClick={() => setIsOpen(false)}
+                >
                   {item.label}
-                  <span className="bg-primary absolute -bottom-1 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full" />
-                </span>
-                <ArrowUpRight className="text-primary size-4 opacity-0 transition-all delay-200 duration-200 group-hover:opacity-100" />
-              </a>
-            ))}
+                </Button>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="hover:text-primary group relative flex items-center gap-1 text-base font-semibold tracking-wide text-slate-800 transition-colors duration-300"
+                >
+                  <span className="relative">
+                    {item.label}
+                    <span className="bg-primary absolute -bottom-1 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full" />
+                  </span>
+                  <ArrowUpRight className="text-primary size-4 opacity-0 transition-all delay-200 duration-200 group-hover:opacity-100" />
+                </Link>
+              ),
+            )}
           </nav>
 
           {/* Mobile Menu Button */}
