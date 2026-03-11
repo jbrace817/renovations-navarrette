@@ -285,7 +285,7 @@ const Navbar21 = ({ className }: Navbar21Props) => {
                         <span className="text-primary font-mono text-xs opacity-50 transition-opacity group-hover:opacity-100">
                           0{index + 1}
                         </span>
-                        <span className="group-hover:text-primary text-4xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-5xl md:text-6xl lg:text-7xl">
+                        <span className="font-heading group-hover:text-primary text-4xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-5xl md:text-6xl lg:text-7xl">
                           {item.label}
                         </span>
                         <ArrowUpRight className="group-hover:text-primary size-6 -translate-x-2 text-white/0 transition-all duration-300 group-hover:translate-x-0 md:size-8" />

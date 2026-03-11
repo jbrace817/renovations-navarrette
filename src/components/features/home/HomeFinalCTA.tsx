@@ -54,7 +54,7 @@ const HomeFinalCTA = ({ className }: HomeFinalCTAProps) => {
 
                 {/* Heading */}
                 <FadeIn delay={0.2}>
-                  <h2 className="mb-6 text-center text-3xl leading-[1.1] font-semibold tracking-tight text-white sm:text-4xl md:text-left lg:text-5xl">
+                  <h2 className="font-heading mb-6 text-center text-3xl leading-[1.1] font-semibold tracking-tight text-white sm:text-4xl md:text-left lg:text-5xl">
                     Ready to Transform
                     <br />
                     Your{" "}

@@ -88,7 +88,7 @@ export function HomeServicesCards() {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <h2 className="text-foreground mb-4 text-center text-3xl leading-[1.15] font-semibold tracking-tight text-balance sm:text-4xl md:mb-6 lg:text-[2.75rem]">
+            <h2 className="font-heading text-foreground mb-4 text-center text-3xl leading-[1.15] font-semibold tracking-tight text-balance sm:text-4xl md:mb-6 lg:text-[2.75rem]">
               Remodeling and Building Work—
               <span className="text-primary">Done Right</span>
             </h2>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { Footer } from "@/components/Footer";
-import { brandSans, logoMark, logoText } from "./fonts";
+import { brandSans, headingFont, logoMark, logoText } from "./fonts";
 import { Navbar21 } from "@/components/navbar21";
 import { FloatingCallButton } from "@/components/FloatingCallButton";
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${brandSans.variable} ${logoMark.variable} ${logoText.variable} antialiased`}
+        className={`${brandSans.variable} ${headingFont.variable} ${logoMark.variable} ${logoText.variable} antialiased`}
       >
         <Navbar21 />
         <FloatingCallButton />

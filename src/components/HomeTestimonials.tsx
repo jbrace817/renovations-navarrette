@@ -122,7 +122,7 @@ const HomeTestimonials = ({ className }: HomeTestimonialsProps) => {
             </div>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="max-w-2xl text-2xl leading-[1.15] font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl">
+            <h2 className="font-heading max-w-2xl text-2xl leading-[1.15] font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl">
               What Our <span className="text-primary">Clients</span> Say
             </h2>
           </FadeIn>

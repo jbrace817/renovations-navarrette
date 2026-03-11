@@ -96,7 +96,7 @@ const HomeAbout = ({ className }: HomeAboutProps) => {
             </FadeIn>
 
             <FadeIn delay={1.2} inViewPort>
-              <h2 className="text-foreground mb-8 text-3xl leading-[1.15] font-semibold tracking-tight sm:text-4xl md:mb-10 lg:text-[2.75rem]">
+              <h2 className="font-heading text-foreground mb-8 text-3xl leading-[1.15] font-semibold tracking-tight sm:text-4xl md:mb-10 lg:text-[2.75rem]">
                 Dedicated To Delivering High-Quality Custom Home Remodeling With{" "}
                 <span className="text-primary">Craftsmanship</span> You Can
                 Trust

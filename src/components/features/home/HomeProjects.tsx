@@ -95,7 +95,7 @@ const HomeProjects = ({ className }: HomeProjectsProps) => {
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-              <h2 className="text-foreground max-w-xl text-3xl leading-[1.15] font-semibold tracking-tight sm:text-4xl lg:text-[2.75rem]">
+              <h2 className="font-heading text-foreground max-w-xl text-3xl leading-[1.15] font-semibold tracking-tight sm:text-4xl lg:text-[2.75rem]">
                 Recent <span className="text-primary">Transformations</span>
               </h2>
               <p className="text-muted-foreground max-w-md text-base leading-relaxed md:text-lg">
@@ -123,7 +123,7 @@ const HomeProjects = ({ className }: HomeProjectsProps) => {
                     >
                       {project.badge}
                     </Badge>
-                    <h3 className="text-foreground mb-4 text-2xl font-semibold tracking-tight text-balance sm:text-3xl lg:text-4xl">
+                    <h3 className="font-heading text-foreground mb-4 text-2xl font-semibold tracking-tight text-balance sm:text-3xl lg:text-4xl">
                       {project.title}
                     </h3>
                     <div className="mb-8 max-w-lg space-y-4">

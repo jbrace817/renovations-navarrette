@@ -47,7 +47,7 @@ export function HomeMidCTA({
             </div>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="max-w-2xl text-2xl leading-[1.15] font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl">
+            <h2 className="font-heading max-w-2xl text-2xl leading-[1.15] font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl">
               Quality Work, <span className="text-primary">On Time</span>, Every
               Time
             </h2>

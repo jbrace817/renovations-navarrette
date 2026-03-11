@@ -51,7 +51,7 @@ const Hero13 = ({ className }: Hero13Props) => {
           </Badge>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <h1 className="mb-4 text-3xl leading-tight font-bold tracking-tighter text-white sm:text-4xl md:mb-6 md:text-5xl md:text-[7vw] lg:text-7xl">
+          <h1 className="font-heading mb-4 text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl md:mb-6 md:text-5xl md:text-[7vw] lg:text-7xl">
             Custom Home
             <br />
             Remodeling Crafted
