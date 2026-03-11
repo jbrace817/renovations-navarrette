@@ -11,7 +11,7 @@ interface FloatingCallButtonProps {
 }
 
 const FloatingCallButton = ({
-  phoneNumber = "1234567890",
+  phoneNumber = "+12157911660",
   className,
 }: FloatingCallButtonProps) => {
   const formattedPhone = phoneNumber.replace(/\D/g, "");

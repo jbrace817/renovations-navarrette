@@ -46,7 +46,7 @@ const socialLinks = [
 
 const contactInfo = {
   email: "info@renovationsbynavarrette.com",
-  phone: "(123) 456-7890",
+  phone: "(215) 791-1660",
 };
 
 interface Navbar21Props {

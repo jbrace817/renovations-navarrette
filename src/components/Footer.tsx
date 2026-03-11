@@ -17,8 +17,8 @@ const footerData = {
     href: "mailto:info@renovationsbynavarrette.com",
   },
   phone: {
-    label: "(123) 456-7890",
-    href: "tel:+11234567890",
+    label: "(215) 791-1660",
+    href: "tel:+12157911660",
   },
   location: "Southampton, PA",
   socialLinks: [
