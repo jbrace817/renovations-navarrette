@@ -55,10 +55,10 @@ export function Logo({ className, href = "/", invert = false }: LogoProps) {
 
       {/* Wordmark */}
       <span className="flex flex-col leading-none">
-        <span className="font-logo-text text-[0.64em] font-light tracking-[0.05em] italic">
+        <span className="font-logo-text text-[0.64em] font-normal tracking-[0.05em] italic">
           Renovations
         </span>
-        <span className="font-logo-text text-[0.38em] font-normal tracking-[0.2em] uppercase">
+        <span className="font-logo-text text-[0.38em] font-semibold tracking-[0.2em] uppercase">
           by Navarrette
         </span>
       </span>
