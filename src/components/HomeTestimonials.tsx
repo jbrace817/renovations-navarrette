@@ -91,7 +91,7 @@ const avatarColors = [
   "bg-emerald-500",
   "bg-green-500",
   "bg-lime-500",
-  "bg-amber-500",
+  "bg-slate-500",
   "bg-orange-500",
   "bg-red-500",
 ];
@@ -109,9 +109,7 @@ function getAvatarColor(name: string) {
 
 const HomeTestimonials = ({ className }: HomeTestimonialsProps) => {
   return (
-    <section
-      className={cn("bg-neutral-950 py-16 md:py-24 lg:py-32", className)}
-    >
+    <section className={cn("bg-slate-900 py-16 md:py-24 lg:py-32", className)}>
       <Container>
         {/* Section Header */}
         <div className="mb-12 md:mb-16">
@@ -158,7 +156,7 @@ const HomeTestimonials = ({ className }: HomeTestimonialsProps) => {
               <FadeIn delay={0.2} className="lg:col-span-2">
                 <div className="relative flex h-full flex-col justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8 lg:p-10">
                   {/* Gradient accent */}
-                  <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-amber-500/10 via-transparent to-transparent" />
+                  <div className="from-primary/10 pointer-events-none absolute inset-0 bg-linear-to-br via-transparent to-transparent" />
 
                   <div className="relative">
                     {/* Quote Icon */}
@@ -208,7 +206,7 @@ const HomeTestimonials = ({ className }: HomeTestimonialsProps) => {
               >
                 <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
                   {/* Gradient accent */}
-                  <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-amber-500/5 via-transparent to-transparent" />
+                  <div className="from-primary/5 pointer-events-none absolute inset-0 bg-linear-to-br via-transparent to-transparent" />
 
                   <div className="relative">
                     <StarRating outOfFive={testimonial.rating} />

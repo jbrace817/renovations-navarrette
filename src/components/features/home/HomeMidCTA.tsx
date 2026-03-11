@@ -34,7 +34,7 @@ export function HomeMidCTA({
   ctaHref = "/contact",
 }: HomeMidCTAProps) {
   return (
-    <section className="bg-neutral-950 pt-16 pb-36 md:pt-24 md:pb-40">
+    <section className="bg-slate-900 pt-16 pb-36 md:pt-24 md:pb-40">
       <Container>
         {/* Section Header */}
         <div className="mb-10 md:mb-14">
@@ -96,7 +96,7 @@ export function HomeMidCTA({
           <FadeIn delay={0.3}>
             <div className="relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
               {/* Subtle gradient accent */}
-              <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-amber-500/10 via-transparent to-transparent" />
+              <div className="from-primary/10 pointer-events-none absolute inset-0 bg-linear-to-br via-transparent to-transparent" />
 
               <div className="relative flex flex-1 flex-col">
                 {/* Eyebrow */}
