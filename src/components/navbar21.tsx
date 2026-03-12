@@ -216,7 +216,7 @@ const MobileServicesAccordion = ({
                   key={service.href}
                   href={service.href}
                   onClick={closeMenu}
-                  className="group flex items-center justify-between py-1.5 text-lg font-medium text-white/70 transition-colors hover:text-white sm:text-xl"
+                  className="group flex items-center justify-between border-b border-white/10 py-1.5 text-lg font-medium text-white/70 transition-colors hover:text-white sm:text-xl"
                 >
                   <span>{service.label}</span>
                   <ArrowUpRight className="text-primary size-4 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -440,7 +440,7 @@ const Navbar21 = ({ className }: Navbar21Props) => {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.4 }}
-                className="flex flex-col gap-8 border-t border-white/10 pt-8 md:flex-row md:items-end md:justify-between"
+                className="flex flex-col gap-8 pt-8 md:flex-row md:items-end md:justify-between"
               >
                 {/* Contact Info */}
                 <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
