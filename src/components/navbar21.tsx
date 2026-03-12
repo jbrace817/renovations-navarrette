@@ -210,17 +210,23 @@ const MobileServicesAccordion = ({
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="overflow-hidden"
           >
-            <div className="mt-3 ml-12 space-y-1 pl-4 sm:ml-14">
-              {servicesDropdown.map((service) => (
-                <a
+            <div className="ml-8 mt-2 flex flex-wrap gap-1.5 sm:ml-10">
+              {servicesDropdown.map((service, i) => (
+                <motion.a
                   key={service.href}
                   href={service.href}
                   onClick={closeMenu}
-                  className="group flex items-center justify-between border-b border-white/10 py-1.5 text-lg font-medium text-white/70 transition-colors hover:text-white sm:text-xl"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    delay: 0.04 * i,
+                    duration: 0.2,
+                    ease: "easeOut",
+                  }}
+                  className="bg-white/5 text-white/70 hover:bg-primary/15 hover:text-primary rounded-full px-3.5 py-1.5 text-sm font-medium tracking-wide transition-colors duration-200"
                 >
-                  <span>{service.label}</span>
-                  <ArrowUpRight className="text-primary size-4 opacity-0 transition-opacity group-hover:opacity-100" />
-                </a>
+                  {service.label}
+                </motion.a>
               ))}
             </div>
           </motion.div>
@@ -383,7 +389,7 @@ const Navbar21 = ({ className }: Navbar21Props) => {
             {/* Subtle gradient accent */}
             {/* <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-transparent" /> */}
 
-            <Container className="relative flex h-full flex-col justify-between py-24 md:py-32">
+            <Container className="relative flex h-full flex-col justify-between overflow-y-auto py-24 md:py-32">
               {/* Main Navigation */}
               <div className="flex flex-1 flex-col justify-center">
                 <motion.div
