@@ -210,22 +210,22 @@ const MobileServicesAccordion = ({
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="overflow-hidden"
           >
-            <div className="ml-8 mt-2 flex flex-wrap gap-1.5 sm:ml-10">
+            <div className="mt-3 ml-8 space-y-1 sm:ml-10">
               {servicesDropdown.map((service, i) => (
                 <motion.a
                   key={service.href}
                   href={service.href}
                   onClick={closeMenu}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, x: -8 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{
                     delay: 0.04 * i,
                     duration: 0.2,
                     ease: "easeOut",
                   }}
-                  className="bg-white/5 text-white/70 hover:bg-primary/15 hover:text-primary rounded-full px-3.5 py-1.5 text-sm font-medium tracking-wide transition-colors duration-200"
+                  className="group flex items-center gap-2 py-1.5 text-lg font-medium text-white/70 transition-colors hover:text-white sm:text-xl"
                 >
-                  {service.label}
+                  <span>{service.label}</span>
                 </motion.a>
               ))}
             </div>
