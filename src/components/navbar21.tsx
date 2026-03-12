@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useState, useEffect, useRef } from "react";
-import { ArrowUpRight, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, Phone, ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Logo } from "./Logo";
@@ -16,14 +16,24 @@ import { Button } from "./ui/button";
 interface MenuItem {
   label: string;
   href: string;
+  hasDropdown?: boolean;
 }
 
 const menuItems: MenuItem[] = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Services", href: "/services", hasDropdown: true },
   { label: "Gallery", href: "/gallery" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+];
+
+const servicesDropdown = [
+  { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
+  { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
+  { label: "Basement Finishing", href: "/services/basement-finishing" },
+  { label: "Home Additions", href: "/services/home-additions" },
+  { label: "Outdoor Living", href: "/services/outdoor-living" },
+  { label: "Custom Cabinetry", href: "/services/custom-cabinetry" },
 ];
 
 const socialLinks = [
@@ -95,6 +105,69 @@ const HamburgerIcon = ({ isOpen }: { isOpen: boolean }) => {
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       />
+    </div>
+  );
+};
+
+const ServicesDropdown = ({ item }: { item: MenuItem }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setIsOpen(false), 150);
+  };
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <Link
+        href={item.href}
+        className="hover:text-primary group relative flex items-center gap-1 text-base font-semibold tracking-wide text-slate-800 transition-colors duration-300"
+      >
+        <span className="relative">
+          {item.label}
+          <span className="bg-primary absolute -bottom-1 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full" />
+        </span>
+        <ChevronDown
+          className={cn(
+            "size-4 transition-transform duration-200",
+            isOpen && "rotate-180",
+          )}
+        />
+      </Link>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="absolute top-full left-1/2 z-50 mt-2 -translate-x-1/2"
+          >
+            <div className="bg-card border-border min-w-[220px] rounded-xl border p-2 shadow-lg">
+              {servicesDropdown.map((service) => (
+                <Link
+                  key={service.href}
+                  href={service.href}
+                  className="hover:bg-muted group flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors"
+                >
+                  <span>{service.label}</span>
+                  <ArrowUpRight className="text-primary size-3.5 opacity-0 transition-opacity group-hover:opacity-100" />
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
@@ -200,6 +273,8 @@ const Navbar21 = ({ className }: Navbar21Props) => {
                 >
                   {item.label}
                 </Button>
+              ) : item.hasDropdown ? (
+                <ServicesDropdown key={item.label} item={item} />
               ) : (
                 <Link
                   key={item.label}
