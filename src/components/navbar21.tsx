@@ -172,6 +172,64 @@ const ServicesDropdown = ({ item }: { item: MenuItem }) => {
   );
 };
 
+const MobileServicesAccordion = ({
+  index,
+  closeMenu,
+}: {
+  index: number;
+  closeMenu: () => void;
+}) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div>
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="group flex w-full items-center gap-4"
+      >
+        <span className="text-primary font-mono text-xs opacity-50 transition-opacity group-hover:opacity-100">
+          0{index + 1}
+        </span>
+        <span className="font-heading group-hover:text-primary text-4xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-5xl md:text-6xl lg:text-7xl">
+          Services
+        </span>
+        <ChevronDown
+          className={cn(
+            "text-primary size-6 transition-transform duration-300 md:size-8",
+            isExpanded && "rotate-180",
+          )}
+        />
+      </button>
+
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="overflow-hidden"
+          >
+            <div className="mt-3 ml-12 space-y-1 pl-4 sm:ml-14">
+              {servicesDropdown.map((service) => (
+                <a
+                  key={service.href}
+                  href={service.href}
+                  onClick={closeMenu}
+                  className="group flex items-center justify-between py-1.5 text-lg font-medium text-white/70 transition-colors hover:text-white sm:text-xl"
+                >
+                  <span>{service.label}</span>
+                  <ArrowUpRight className="text-primary size-4 opacity-0 transition-opacity group-hover:opacity-100" />
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 const Navbar21 = ({ className }: Navbar21Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -352,19 +410,26 @@ const Navbar21 = ({ className }: Navbar21Props) => {
                         ease: "easeOut",
                       }}
                     >
-                      <a
-                        href={item.href}
-                        className="group flex items-center gap-4"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        <span className="text-primary font-mono text-xs opacity-50 transition-opacity group-hover:opacity-100">
-                          0{index + 1}
-                        </span>
-                        <span className="font-heading group-hover:text-primary text-4xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-5xl md:text-6xl lg:text-7xl">
-                          {item.label}
-                        </span>
-                        <ArrowUpRight className="group-hover:text-primary size-6 -translate-x-2 text-white/0 transition-all duration-300 group-hover:translate-x-0 md:size-8" />
-                      </a>
+                      {item.hasDropdown ? (
+                        <MobileServicesAccordion
+                          index={index}
+                          closeMenu={() => setIsOpen(false)}
+                        />
+                      ) : (
+                        <a
+                          href={item.href}
+                          className="group flex items-center gap-4"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <span className="text-primary font-mono text-xs opacity-50 transition-opacity group-hover:opacity-100">
+                            0{index + 1}
+                          </span>
+                          <span className="font-heading group-hover:text-primary text-4xl font-semibold tracking-tight text-white transition-colors duration-300 sm:text-5xl md:text-6xl lg:text-7xl">
+                            {item.label}
+                          </span>
+                          <ArrowUpRight className="group-hover:text-primary size-6 -translate-x-2 text-white/0 transition-all duration-300 group-hover:translate-x-0 md:size-8" />
+                        </a>
+                      )}
                     </motion.div>
                   ))}
                 </nav>
